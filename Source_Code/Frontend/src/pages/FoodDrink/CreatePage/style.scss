@@ -1,0 +1,207 @@
+.FoodDrinkAddPage {
+    .text {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .page-content {
+        width: 100%;
+        // background: red;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .left {
+            width: 600px;
+            height: 600px;
+
+            .dropzone {
+                width: 100%;
+                height: 100%;
+
+                .item-image {
+                    // background: red;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+
+
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px dashed black;
+
+                    .file-label {
+
+                        p {
+                            line-height: 20px;
+                            padding: 10px 10px;
+                            border-radius: 10px;
+                            background: var(--primary-color);
+                            cursor: pointer;
+
+                            &:hover {
+                                background: var(--color-gradient-green);
+                                color: white;
+                                transform: scale(1.02);
+                            }
+                        }
+
+                    }
+
+                    .file-chooser {
+                        display: none;
+                    }
+                }
+
+                .image-container {
+                    position: relative;
+                    display: flex;
+                    width: 100%;
+                    // height: 600px;
+                    height: 100%;
+
+                    // height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
+
+                    .edit-btn {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        bottom: 50%;
+                        right: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0, 0, 0, 0.249);
+                        color: rgba(255, 255, 255);
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-size: 20px !important;
+                        cursor: pointer;
+                        transition: all 0.2s ease-in-out;
+
+                        &:hover {
+                            background: var(--color-gradient-green);
+                            color: white;
+                            transform: translate(-50%, -50%) scale(1.02);
+                        }
+
+                        input {
+                            display: none;
+                        }
+                    }
+                }
+
+                .drag-over {
+                    background: rgb(198, 198, 198);
+                }
+            }
+
+        }
+
+        .right {
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            // background: red;
+            text-align: center;
+            width: 800px;
+
+            .item {
+                display: grid;
+                // flex-direction: column;
+                grid-template-columns: 20% 80%;
+                // background: red;
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+
+                input {
+                    height: 50px;
+                    padding: 0px 5px;
+
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 20px;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 2px solid black;
+                    transform: translate(0, -20%);
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid var(--primary-color);
+
+                    }
+                }
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: flex-start;
+
+                textarea {
+                    width: 100%;
+                    height: 400px;
+                    resize: none;
+                    font-family: 'Titillium Web', sans-serif;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .type {
+                align-items: center;
+                justify-content: center;
+
+                select {
+                    padding: 10px;
+                    width: 150px;
+                    border-radius: 5px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15px;
+        margin: 20px 0;
+        .save-btn {
+            font-size: 25px;
+            font-weight: bold;
+            // background: red;
+            // margin: 30px auto;
+
+
+        }
+    }
+}

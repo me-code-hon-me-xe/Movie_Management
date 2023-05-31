@@ -1,0 +1,178 @@
+.TheaterViewAllPage {
+    max-width: 1600px;
+    position: relative;
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: 600px;
+
+        object-fit: cover;
+    }
+
+    .image-container {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        height: fit-content;
+
+
+        .image-left,
+        .image-right {
+            position: relative;
+            width: 20%;
+
+
+            .left-btn,
+            .right-btn {
+                position: absolute;
+                font-size: 30px;
+                top: 50%;
+                left: 50%;
+                bottom: 50%;
+                right: 50%;
+                color: rgba(255, 255, 255, 0.674);
+                z-index: 2;
+                cursor: pointer;
+
+                i {
+                    text-align: center;
+                    background: rgba(0, 0, 0, 0.393);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+
+                }
+
+                &:hover {
+                    color: white;
+
+                    i {
+                        background: black;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), transparent);
+            }
+        }
+
+        .empty-box {
+            position: relative;
+            width: 20%;
+            height: auto;
+            background: black;
+            border-radius: 10px;
+
+            &:after {
+                position: absolute;
+                content: "MovieMate";
+                width: 100%;
+                height: fit-content;
+                top: 50%;
+                left: 0;
+                bottom: 50%;
+                right: 0;
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                background: var(--color-gradient-green);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                // background: red
+            }
+        }
+
+
+        .image-center {
+            position: relative;
+            width: 60%;
+
+            object-fit: cover;
+        }
+
+        .room-name {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+            background: rgba(0, 0, 0, 0.393);
+            font-size: 36px;
+            text-align: center;
+            z-index: 2;
+        }
+    }
+
+    .room-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+
+
+    }
+
+  
+
+}
+
+
+
+@media (max-width: 1400px) {
+
+    .TheaterViewAllPage {
+        padding: 0 10px 10px 10px;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+            max-height: 400px;
+
+        }
+
+        .image-container {
+            gap: 10px;
+
+
+            .image-left,
+            .image-right {
+
+                .left-btn,
+                .right-btn {
+
+
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+
+            .room-name {
+                background: rgba(0, 0, 0, 0.393);
+            }
+        }
+    }
+
+
+}

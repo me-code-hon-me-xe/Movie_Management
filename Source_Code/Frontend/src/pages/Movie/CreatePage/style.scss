@@ -1,0 +1,228 @@
+.MovieCreatePage {
+
+
+    .add-movie-text {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        // margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .page-content {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        input {
+            height: 50px;
+            padding: 0px 5px;
+
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+            transform: translate(0, -20%);
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid var(--primary-color);
+
+            }
+        }
+
+        .left {
+            padding: 20px;
+
+            .movie-title {
+                input {
+                    width: 100%;
+                }
+
+                margin-bottom: 20px;
+            }
+
+            .poster {
+                // background: red;
+                display: flex;
+                width: 100%;
+                min-height: 800px;
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px dashed black;
+
+                .file-label {
+
+                    p {
+                        line-height: 20px;
+                        padding: 10px 10px;
+                        border-radius: 10px;
+                        background: var(--primary-color);
+                        cursor: pointer;
+
+                        &:hover {
+                            background: var(--color-gradient-green);
+                            color: white;
+                            transform: scale(1.02);
+                        }
+                    }
+
+                }
+
+                .file-chooser {
+                    display: none;
+                }
+            }
+
+            .image-container {
+                position: relative;
+                display: flex;
+                width: 100%;
+                // height: 600px;
+                height: fit-content;
+
+                // height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+
+                }
+
+                .edit-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    bottom: 50%;
+                    right: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0, 0, 0, 0.249);
+                    color: rgba(255, 255, 255);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 20px !important;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background: var(--color-gradient-green);
+                        color: white;
+                        transform: translate(-50%, -50%) scale(1.02);
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
+            }
+
+            .drag-over {
+                background: rgb(198, 198, 198);
+            }
+        }
+
+
+        .right {
+            padding: 20px;
+            border-left: 1px dashed rgba(0, 0, 0, 0.457);
+
+            .item {
+                input {
+                    width: 300px;
+
+                }
+            }
+
+            .item-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .release-date,
+                .duration,
+                .country {
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                    align-items: center;
+                    // flex-direction: column;
+                    // margin-bottom: 20px;
+                }
+
+                .description {
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 10px;
+                        font-family: 'Titillium Web', sans-serif;
+                        font-size: 20px;
+                        box-sizing: border-box;
+                        resize: none;
+                        border: 2px solid black;
+                        padding: 10px;
+
+                        &:focus {
+                            outline: none;
+
+                        }
+                    }
+                }
+            }
+
+            .genre,
+            .actor,
+            .director {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .add-btn {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    background: var(--primary-color);
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: var(--color-gradient-green);
+                        color: white;
+                        transform: scale(1.02);
+                    }
+                }
+            }
+
+            .genre-container,
+            .actor-container,
+            .director-container {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        }
+
+
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15px;
+        margin: 20px 0;
+        .save-btn {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+}

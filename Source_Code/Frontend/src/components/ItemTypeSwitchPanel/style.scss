@@ -1,0 +1,29 @@
+.SwitchPanel {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+
+    .switch-btn {
+        padding: 5px 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.187);
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .active-btn {
+        background: var(--color-gradient-green);
+        color: white;
+        transform: scale(1.2);
+    }
+}

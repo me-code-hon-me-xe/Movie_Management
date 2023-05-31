@@ -1,0 +1,170 @@
+  /* Login Page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald&family=Roboto&family=Titillium+Web:wght@600&display=swap');
+
+:root {
+  /* generate a gradient color with red and blue? */
+  --primary-color: #00FF87;
+  /* --primary-color: linear-gradient(255deg, #00FF87, #078C5D); */
+  --primary-color-light: #DDFFBB;
+  --primary-color-dark: #17A500;
+  --color-gray: #c7c4c4;
+  --color-gradient-blue: linear-gradient(45deg, #008eff, #2dfd8e);
+  --color-gradient-green: linear-gradient(255deg, #00FF87, #078C5D);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.1s ease-in-out;
+
+
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background: var(--color-gradient-green);
+}
+
+.App {
+  position: relative;
+  /* text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;  
+  justify-content: center; */
+
+}
+
+.app-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+.auth-form-container,
+.login-form {
+  display: flex;
+  padding-bottom: 5px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.label-email {
+  width: 100%;
+  text-align: left;
+}
+
+.sign-in {
+  width: 100%;
+  padding-bottom: 15%;
+}
+
+.label-password {
+  width: 100%;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.button-login {
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.btnlogin {
+  background: #ff4d4d;
+  width: 100%;
+  border: thin;
+  padding: 3%;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4 linear;
+}
+
+.btnlogin:hover {
+  background: #ff3333;
+}
+
+.leftside,
+.rightside {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftside {
+  background: white;
+}
+
+.rightside {
+  background: white;
+}
+
+.login-image {
+  background-image: url("./images/LoginImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* ------------------------------------------------------- */
+
+/* Nav bar */
+
+li:hover {
+  background-color: #777;
+  text-decoration: none;
+}
+
+li:active {
+  text-decoration: none;
+}
+
+.gradient-btn{
+  margin-bottom: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 50px;
+  width: fit-content;
+  border-radius: 10px;
+  border: none;
+  background: rgb(47, 255, 137);
+  color: black;
+  cursor: pointer;
+
+  &:focus {
+      outline: none;
+  }
+
+  &:hover {
+      transform: scale(1.02);
+      background: var(--color-gradient-green);
+      color: white;
+  }
+}
+.avatar {
+  background-image: url("./images/LoginImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  border-radius: 100%;
+  padding: 26px;
+}

@@ -1,0 +1,61 @@
+.AddPriceRate {
+    background: #FF6464;
+    padding: 5px;
+    margin: 10px 0;
+
+    .from,
+    .to,
+    .price {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0;
+
+        input {
+            width: 100px;
+            padding: 5px;
+            font-family: 'Titillium Web', sans-serif;
+            border-radius: 5px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .btn-container {
+        background: rgba(0, 0, 0, 0.831);
+        display: flex;
+        justify-content: space-around;  
+        padding: 5px 10px;
+
+        .btn {
+            padding: 5px 10px;
+            width: 70px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1)
+            }
+        }
+
+        .add-btn {
+            background: var(--primary-color);
+        }
+
+        .cancel-btn {
+            background: red;
+        }
+
+        .disabled {
+            background: rgb(184, 182, 182);
+            color: black;
+            cursor: not-allowed;
+        }
+    }
+}

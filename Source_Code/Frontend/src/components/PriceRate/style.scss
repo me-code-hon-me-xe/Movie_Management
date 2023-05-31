@@ -1,0 +1,49 @@
+.PriceRate {
+    position: relative;
+    padding: 20px 10px 5px 5px;
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    flex-direction: column;
+
+    p {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 25px !important;
+    }
+
+    .price {
+        display: grid;
+        place-items: center;
+
+        .price-text {
+            color: red;
+            // font-weight: 700 ;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 2px 5px;
+            background: rgba(0, 0, 0, 0.696);
+        }
+    }
+
+
+
+    .deleteBtn {
+        color: white;
+        position: absolute;
+        top: -5px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.658);
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background: black;
+            color: red;
+            transform: scale(1.05);
+        }
+    }
+
+}

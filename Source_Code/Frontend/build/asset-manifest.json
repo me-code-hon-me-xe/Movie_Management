@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec80ea52.css",
+    "main.js": "/static/js/main.93e3c763.js",
+    "static/media/LoginImage.jpg": "/static/media/LoginImage.cea240ce2b5bd397241c.jpg",
+    "static/media/staff.png": "/static/media/staff.d426dc98443563b0c31c.png",
+    "static/media/cinema.png": "/static/media/cinema.15bbde049edd591bee2a.png",
+    "static/media/ticket.png": "/static/media/ticket.7ed27368609203aefa25.png",
+    "static/media/history.png": "/static/media/history.6707915973f41d991253.png",
+    "static/media/food_drink.png": "/static/media/food_drink.cae406a64024bff34d8b.png",
+    "static/media/hamburger.png": "/static/media/hamburger.6e4ad84549d0bb0f0ac9.png",
+    "static/media/logo.png": "/static/media/logo.6c5017e9a3df1f4c9c55.png",
+    "static/media/theater_room.png": "/static/media/theater_room.1b00df6b37f50e70e0b6.png",
+    "index.html": "/index.html",
+    "main.ec80ea52.css.map": "/static/css/main.ec80ea52.css.map",
+    "main.93e3c763.js.map": "/static/js/main.93e3c763.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec80ea52.css",
+    "static/js/main.93e3c763.js"
+  ]
+}

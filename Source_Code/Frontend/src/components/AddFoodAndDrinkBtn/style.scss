@@ -1,0 +1,34 @@
+.AddFoodAndDrinkBtn {
+    display: grid;  
+    place-items: center;
+    width: 250px;
+    height: 350px;
+    // border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    border: 3px dashed var(--primary-color);
+
+    p {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        background: var(--primary-color);
+        font-weight: bold;
+
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background: var(--color-gradient-green);
+        border: 3px dashed white;
+        transform: scale(1.05);
+        p {
+            background: white;
+            color: black;
+        }
+    }
+}

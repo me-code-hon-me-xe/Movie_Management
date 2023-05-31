@@ -1,0 +1,27 @@
+.room-detail {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: 'Titillium Web', sans-serif;
+
+    .room-info {
+        // background: red;
+        border-right: 1px solid rgb(199, 199, 199);
+        padding: 20px;
+        .room-name {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            margin: 5px 0;
+            // font-weight: 600;
+        }
+    }
+
+  
+}

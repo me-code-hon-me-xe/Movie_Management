@@ -1,0 +1,128 @@
+.MovieSchedulingPage {
+    padding: 10px 30px;
+
+    .text,
+    .page-name {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .page-name {
+        text-align: center;
+    }
+
+    .date-picker-container {
+        // background: red;
+        padding: 10px 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.299);
+        display: flex;
+        // justify-content: space-around;
+        gap: 50px;
+
+        .showtime-picker,
+        .showtime-spot-picker {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            margin-bottom: 20px;
+
+
+
+            input,
+            select {
+                width: 300px;
+                height: 50px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgba(0, 0, 0, 0.452);
+            }
+        }
+    }
+
+    .theater-room-picker {
+        padding: 10px 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.299);
+
+        .theater-room-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+
+    .price-setter {
+        padding: 10px 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.299);
+
+        .setter {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            font-family: 'Titillium Web', sans-serif;
+
+            .room-info {
+                // background: red;
+                border-right: 1px solid rgb(199, 199, 199);
+                padding: 20px;
+
+                .room-name {
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 30px;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 18px;
+                    margin: 5px 0;
+                    // font-weight: 600;
+                }
+
+                .price-rate-container {
+                    max-height: 1000px;
+                    padding-right: 10px;
+                    overflow-y: scroll;
+                }
+
+                .add-price-rate-btn {
+                    background: greenyellow;
+                    margin: 0 auto;
+                    padding: 5px;
+                    border-radius: 5px;
+                    width: 200px;
+                    text-align: center;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: var(--primary-color);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15px;
+        margin: 20px 0;
+        .save-btn {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+}

@@ -1,0 +1,81 @@
+.StaffViewAllPage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    row-gap: 30px;
+    column-gap: 20px;
+
+}
+
+.staff-popup {
+    width: 800px;
+    height: fit-content;
+    max-height: 800px;
+    padding: 20px;
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .staff-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+
+        .staff-image {
+            img {
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+
+        .staff-detailed-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 20px;
+
+
+            .staff-name {
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            .staff-title {
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(103, 103, 103);
+            }
+
+            .staff-contact {
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid rgb(92, 92, 92);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .staff-bio {
+        margin-top: 20px;
+        font-size: 20px;
+        height: fit-content;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,52 @@
+.FoodOrderItem {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 10% 45% 15% 10% 20%;
+    border-bottom: 1px solid black;
+    // column-gap: 10px;
+    place-items: center;
+    .itemImage {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+
+        border-radius: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 5px 0px;
+        font-style: bold;
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+
+    }
+    .itemName {
+        font-family: 'Roboto', sans-serif ;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 5px 10px;
+        font-style: bold;
+        text-align: left;
+    }
+
+    .unitPrice {
+        font-size: 25px;
+        text-align: right;
+    }
+
+    .quantity {
+        // font-family: 'Oswald', sans-serif;
+        text-align: center;
+
+        // align-self: center;
+    }
+
+    .total {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+}

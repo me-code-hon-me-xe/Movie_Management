@@ -1,0 +1,19 @@
+.step-3 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 10px;
+
+    .seat-info {
+        // background: red;
+        border-right: 1px solid black;
+
+        .seat-info-text {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+}

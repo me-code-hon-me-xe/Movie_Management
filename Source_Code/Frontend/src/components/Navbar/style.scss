@@ -1,0 +1,115 @@
+.navbar {
+  border-bottom: 1px solid var(--color-gray);
+  margin-bottom: 30px;
+
+  .app-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+
+    .app-logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .app-name {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 32px;
+      background: var(--color-gradient-green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+
+    .item-container {
+      display: flex;
+
+      .nav-link {
+        text-decoration: none;
+        color: black;
+      }
+
+      .navbar-user {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+
+        img {
+          margin-left: 20px;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          z-index: 2;
+
+
+        }
+
+
+        &:hover {
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: -5.25px;
+            right: -5.25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--color-gradient-blue);
+            z-index: 1;
+          }
+        }
+
+      }
+
+
+      .nav-item {
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background: white;
+
+        }
+
+
+      }
+
+      .active {
+        // background: var(--primary-color);
+        position: relative;
+        border-radius: 5px;
+        background: var(--color-gradient-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // font-size: 20px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background: var(--color-gradient-green);
+        }
+      }
+    }
+
+  }
+
+}

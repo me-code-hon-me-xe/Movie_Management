@@ -1,0 +1,17 @@
+.Spot {
+    line-height: 35px;
+    padding: 10px 10px;
+    width: fit-content;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.171);
+}
+
+.spot-active {
+    background: var(--color-gradient-green);
+    color: white;
+}

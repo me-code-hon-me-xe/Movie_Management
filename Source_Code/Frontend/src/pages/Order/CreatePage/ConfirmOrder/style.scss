@@ -1,0 +1,26 @@
+.step-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+
+
+
+    .confirm-btn {
+        margin-top: 100px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px 50px;
+        width: fit-content;
+        border-radius: 10px;
+        border: none;
+        margin: 0 auto;
+        background: var(--color-gradient-green);
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

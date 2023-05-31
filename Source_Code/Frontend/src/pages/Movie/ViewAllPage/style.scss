@@ -1,0 +1,40 @@
+.MovieViewAllPage {
+    padding: 30px;
+
+    .add-movie-btn {
+        margin-bottom: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px 50px;
+        width: fit-content;
+        border-radius: 10px;
+        border: none;
+        background: rgb(47, 255, 137);
+        color: black;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            background: var(--color-gradient-green);
+
+        }
+    }
+
+    .movie-container {
+        border-top: 1px solid rgba(0, 0, 0, 0.553);
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        gap: 30px;
+        // background: red;
+        place-items: center;
+    }
+
+    
+
+}

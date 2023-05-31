@@ -1,0 +1,43 @@
+
+.Room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    gap: 5px;
+    cursor: pointer;
+
+    .room-image {
+        height: 150px;
+        width: 200px;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .room-name {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+
+.room-active {
+
+    .room-image {
+        position: relative;
+        z-index: 1;
+        // border-radius: 1px; 
+        background: var(--color-gradient-green);
+    }
+
+    
+}

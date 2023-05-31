@@ -1,0 +1,85 @@
+.SeatChart {
+    .movie-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .screen {
+            background: black;
+            width: 500px;
+            height: 10px;
+        }
+
+        .screen-text {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .seat-chart-text {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .seat-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+
+
+    }
+
+}
+
+.small-size {
+
+
+    .movie-screen {
+        .screen {
+            width: 250px;
+            height: 5px;
+        }
+
+        .screen-text {
+            font-size: 15px;
+            margin-bottom: 10px;
+
+        }
+    }
+
+    .seat-chart-text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+    }
+
+    .seat-container {
+        gap: 20px;
+
+        .Seat {
+     
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+        
+            p {
+                max-width: 60px;
+                font-size: 10px;
+            }
+        
+            .rowNum {
+                font-size: 8px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,102 @@
+.FoodDrinkViewAllPage {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+
+    .switch-btn-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 40px;
+
+        .switch-btn {
+            padding: 5px 30px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.187);
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .active-btn {
+            background: var(--color-gradient-green);
+            color: white;
+            transform: scale(1.2);
+        }
+    }
+
+    .item-container {
+        // background: red;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        place-items: center;
+        column-gap: 20px;
+        row-gap: 30px;
+
+    }
+}
+
+.item-popup {
+    padding: 20px;
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-image {
+        width: 400px;
+        height: 400px;
+        border-radius: 5px;
+    }
+
+
+    .right {
+        position: relative;
+
+        .item-name {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .item-description {
+            font-size: 16px;
+            max-height: 300px;
+            overflow-y: auto;
+
+        }
+
+        .item-price {
+            position: absolute;
+            bottom: -20px;
+            right: 10px;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: red;
+
+        }
+
+
+    }
+
+
+  
+}

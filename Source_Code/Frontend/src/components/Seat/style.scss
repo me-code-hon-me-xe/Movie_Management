@@ -1,0 +1,23 @@
+.Seat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: var(--primary-color);
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+
+    p {
+        margin: 0;
+        display: inline-block;
+        max-width: 60px;
+    }
+
+    .rowNum {
+        font-size: 18px;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+    }
+}

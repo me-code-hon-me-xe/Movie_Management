@@ -1,0 +1,37 @@
+.Showtime {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+
+    p {
+        margin: 0;
+    }
+
+    .month {
+        font-size: 24px;
+        height: 50px;
+        line-height: 50px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        // margin: 0;
+    }
+
+    .days {
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+        // margin: 0;
+    }
+}
+
+.showtime-active {
+    background: var(--color-gradient-green);
+    color: white;
+}

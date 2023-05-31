@@ -1,0 +1,80 @@
+.MovieShowtimeDetails {
+
+    .add-btn {
+        // padding: 20px 30px;
+        width: 100px;
+        height: 100px;
+        border: none;
+        background: white;
+        border: 2px dashed black;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        // opacity: 0.5;
+
+        &:hover {
+            background: var(--primary-color);
+
+        }
+        .add-btn-text {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background: transparent;
+        }
+    }
+
+    .ShowtimeList {
+        padding: 20px 30px;
+
+
+        .showtime-list-text {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .showtime-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+           
+        }
+
+
+    }
+
+    .SpotList {
+        padding: 20px 30px;
+
+        .spot-list-text {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .spot-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .add-btn {
+                // padding: 20px 30px;
+                width: 120px;
+                height: 50px;
+                // color: red;
+            }
+        }
+
+
+    }
+
+
+}
